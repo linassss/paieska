@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prekės paieška</title>
+
+</head>
+<body class="index">
+  <section class="header">
+
+  </section>
+
+  <form action="./" method="POST">
+    <h2>Prekės paieška</h2>
+    <br>
+    <label for="preke">Įveskite prekės pavadinimą:</label>
+    <input type="text" id="preke" name="preke" class="preke" maxlength="16">
+    <input type="submit" id="ieskoti" value="Ieškoti">
+  </form>
+  <br>
+  <div style="font-weight:bold" class="parduotuve" id="lemona">Lemona:</div>
+  <a  class="prekes" id="lemona0" href="<%= lemonosPrekes.linkas[0] %>">
+    <%= lemonosPrekes.kaina[0] %>
+    <%= lemonosPrekes.preke[0] %>
+  </a>
+  <br>
+  <a  class="prekes" id="lemona1" href="<%= lemonosPrekes.linkas[1] %>">
+    <%= lemonosPrekes.kaina[1] %>
+    <%= lemonosPrekes.preke[1] %>
+  </a>
+  <br>
+  <a  class="prekes" id="lemona2" href="<%= lemonosPrekes.linkas[2] %>">
+    <%= lemonosPrekes.kaina[2] %>
+    <%= lemonosPrekes.preke[2] %>
+  </a>
+  <br>
+  <a class="yraDaugiau" id="lemonaDaugiau" href="<%= lemonosPrekes.viskas %>">
+    <%= lemonosPrekes.daug %>
+  </a>
+  <br><br>
+  <div style="font-weight:bold" class="parduotuve" id="evita">Evita:</div>
+  <a  class="prekes" id="evita0" href="<%= evitosPrekes.linkas[0] %>">
+    <%= evitosPrekes.kaina[0] %>
+    <%= evitosPrekes.preke[0] %>
+  </a>
+  <br>
+  <a  class="prekes" id="evita1" href="<%= evitosPrekes.linkas[1] %>">
+    <%= evitosPrekes.kaina[1] %>
+    <%= evitosPrekes.preke[1] %>
+  </a>
+  <br>
+  <a  class="prekes" id="evita2" href="<%= evitosPrekes.linkas[2] %>">
+    <%= evitosPrekes.kaina[2] %>
+    <%= evitosPrekes.preke[2] %>
+  </a>
+  <br>
+  <a class="yraDaugiau" id="evitaDaugiau" href="<%= evitosPrekes.viskas %>">
+    <%= evitosPrekes.daug %>
+  </a>
+  <br><br>
+  <div style="font-weight:bold" class="parduotuve" id="rcl">RCL:</div>
+  <a  class="prekes" id="rcl0" href="<%= rclPrekes.linkas[0] %>">
+    <%= rclPrekes.kaina[0] %>
+    <%= rclPrekes.preke[0] %>
+  </a>
+  <br>
+  <a  class="prekes" id="rcl1" href="<%= rclPrekes.linkas[1] %>">
+    <%= rclPrekes.kaina[1] %>
+    <%= rclPrekes.preke[1] %>
+  </a>
+  <br>
+  <a  class="prekes" id="rcl2" href="<%= rclPrekes.linkas[2] %>">
+    <%= rclPrekes.kaina[2] %>
+    <%= rclPrekes.preke[2] %>
+  </a>
+  <br>
+  <a class="yraDaugiau" id="rclDaugiau" href="<%= rclPrekes.viskas %>">
+    <%= rclPrekes.daug %>
+  </a>
+
+</body>
+</html>
